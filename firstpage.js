@@ -1,1 +1,3 @@
-import react from react;
+const { RecaptchaVerifier } = require("firebase/auth/web-extension");
+
+RecaptchaVerifier

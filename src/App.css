@@ -1,38 +1,79 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .App {
   text-align: center;
+  position: relative; /* Allows absolute positioning of child elements */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Left-logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Logo-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #f4f4f4; /* Optional background for the logo container */
+}
+
+.Navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.Navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.Navbar li {
+  margin-left: 20px;
+}
+
+.Navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.Navbar a:hover {
+  background-color: #555;
+}
+
+.Navbar-logo,
+.Left-logo {
+  width: 60px; /* Adjust the size as needed */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+}
+
+.Scan-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Scan-button:hover {
+  background-color: #45a049;
 }
